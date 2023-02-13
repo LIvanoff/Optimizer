@@ -171,7 +171,7 @@ export namespace Simplex {
 	bool Simplex::stopCriteria()
 	{
 		double funcValue = calcFuncValue(this->gravityCenter[0], this->gravityCenter[1]);
-		cout << " funcValue = " << funcValue << endl;
+		cout << " f("<< this->gravityCenter[0]  << ", " << this->gravityCenter[1] << ") = " << funcValue << endl;
 		for (int i = 0; i < this->sizeOfArray; i++)
 		{
 			cout << " " << abs(this->arrayOfSimplex[i][2] - funcValue) << " ?= " << this->epsilon << endl;
