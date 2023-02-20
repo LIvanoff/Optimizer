@@ -4,12 +4,9 @@
   <ol>
     <li>
       <a href="#Методы">Методы</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Визуализация работы">Визуализация работы</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -29,3 +26,6 @@
 * Метод градиентного спуска с постоянным шагом (IN PROGRESS)
 * Метод наискорейшего градиентного спуска (IN PROGRESS)
 * Метод Флетчера-Ривса (IN PROGRESS)
+
+## Визуализация работы:
+* #Метод наискорейшего градиентного спуска
