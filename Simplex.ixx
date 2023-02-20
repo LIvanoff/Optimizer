@@ -23,7 +23,7 @@ export namespace Simplex {
 		void calcNewVertex();
 		void calcNewGravityCenter();
 		bool stopCriteria();
-		void getReduction();
+		void calcReduction();
 
 	private:
 		int sizeOfSimplex;
@@ -71,7 +71,7 @@ export namespace Simplex {
 
 			if (newVertex > this->arrayOfSimplex[2][2])
 			{
-				getReduction();
+				calcReduction();
 			}
 			else
 			{
@@ -79,7 +79,6 @@ export namespace Simplex {
 			}
 			calcNewGravityCenter();
 		}
-		cout << "Конструктор отработал!\n";
 	}
 
 	Simplex::~Simplex()
@@ -89,7 +88,6 @@ export namespace Simplex {
 			delete[] this->arrayOfSimplex[i];
 		}
 		delete[] this->arrayOfSimplex;
-		cout << "Деструктор отработал!\n";
 	}
 
 	void Simplex::calcDelta()
@@ -114,7 +112,7 @@ export namespace Simplex {
 
 	double Simplex::calcFuncValue(double x, double y)
 	{
-		return pow(x, 2) - x * y + pow(y, 2) + 2 * x + 3 * y; // 2.8 * pow(y, 2) + 1.9 * x + 2.7 * pow(x, 2) + 1.6 - 1.9 * y;
+		return pow(x, 2) - x * y + pow(y, 2) + 2 * x + 3 * y; // 2.8 * pow(y, 2) + 1.9 * x + 2.7 * pow(x, 2) + 1.6 - 1.9 * y; 5 * x * x - 4 * x * y + y * y - x - y;
 	}
 
 	void Simplex::printArray()
@@ -185,7 +183,7 @@ export namespace Simplex {
 		return true;
 	}
 
-	void Simplex::getReduction()
+	void Simplex::calcReduction()
 	{
 		for (int i = 1; i < this->sizeOfArray; i++)
 		{
