@@ -6,18 +6,10 @@
       <a href="#Методы">Методы</a>
     </li>
     <li>
-      <a href="#Визуализация работы">Визуализация работы</a>
+      <a href="#Визуализация работы алгоритмов">Визуализация работы алгоритмов</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#Метод наискорейшего градиентного спуска">Метод наискорейшего градиентного спуска</a></li>
       </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 
 ## Методы:
@@ -27,5 +19,5 @@
 * Метод наискорейшего градиентного спуска (IN PROGRESS)
 * Метод Флетчера-Ривса (IN PROGRESS)
 
-## Визуализация работы:
-* #Метод наискорейшего градиентного спуска
+## Визуализация работы алгоритмов:
+# Метод наискорейшего градиентного спуска
