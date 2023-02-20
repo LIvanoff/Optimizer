@@ -1,9 +1,9 @@
 # Optimizer
+## Библиотека методов безусловной оптимизации
 
-<summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Методы">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -23,7 +23,7 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 
-## Библиотека методов безусловной оптимизации, состоящая из:
+## Методы:
 * [Симплекс](https://github.com/LIvanoff/Optimizer/blob/master/Simplex.ixx)
 * Метод Нелдера-Мида (IN PROGRESS)
 * Метод градиентного спуска с постоянным шагом (IN PROGRESS)
