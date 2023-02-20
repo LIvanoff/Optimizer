@@ -3,7 +3,7 @@
 
   <ol>
     <li>
-      <a href="#Методы">About The Project</a>
+      <a href="#Методы">Методы</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
