@@ -26,6 +26,7 @@ export namespace Simplex {
 		void getReduction();
 
 	private:
+		int count = 0;
 		int sizeOfSimplex;
 		int sizeOfArray;
 		double** arrayOfSimplex;
@@ -63,6 +64,7 @@ export namespace Simplex {
 
 		while (!stopCriteria())
 		{
+			this->count += 1;
 			sort();
 			calcGravityCenter();
 			calcNewVertex();
@@ -79,7 +81,7 @@ export namespace Simplex {
 			}
 			calcNewGravityCenter();
 		}
-		cout << "Конструктор отработал!\n";
+		cout << this->count;
 	}
 
 	Simplex::~Simplex()
