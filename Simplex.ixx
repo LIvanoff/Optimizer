@@ -23,7 +23,7 @@ export namespace Simplex {
 		void calcNewVertex();
 		void calcNewGravityCenter();
 		bool stopCriteria();
-		void getReduction();
+		void calcReduction();
 
 	private:
 		int count = 0;
@@ -73,7 +73,7 @@ export namespace Simplex {
 
 			if (newVertex > this->arrayOfSimplex[2][2])
 			{
-				getReduction();
+				calcReduction();
 			}
 			else
 			{
@@ -81,7 +81,6 @@ export namespace Simplex {
 			}
 			calcNewGravityCenter();
 		}
-		cout << this->count;
 	}
 
 	Simplex::~Simplex()
@@ -91,7 +90,6 @@ export namespace Simplex {
 			delete[] this->arrayOfSimplex[i];
 		}
 		delete[] this->arrayOfSimplex;
-		cout << "Деструктор отработал!\n";
 	}
 
 	void Simplex::calcDelta()
@@ -187,7 +185,7 @@ export namespace Simplex {
 		return true;
 	}
 
-	void Simplex::getReduction()
+	void Simplex::calcReduction()
 	{
 		for (int i = 1; i < this->sizeOfArray; i++)
 		{
